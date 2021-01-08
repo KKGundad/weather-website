@@ -53,8 +53,10 @@ app.get('/weather',(req,res)=>{
             if(error) return res.send({error});
             res.send({
                 address : req.query.address,
-                temperature : 'The temperature is ' + forecastData.current.temperature,
-                location : forecastData.location.name
+                temperature : 'The temperature is : ' + forecastData.current.temperature,
+                location : forecastData.location.name,
+                humidity : 'The humidity is : ' + forecastData.current.humidity,
+                pressure : 'The pressure is : '
             });
         })
     })
