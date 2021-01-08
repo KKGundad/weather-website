@@ -56,7 +56,7 @@ app.get('/weather',(req,res)=>{
                 temperature : 'The temperature is : ' + forecastData.current.temperature,
                 location : forecastData.location.name,
                 humidity : 'The humidity is : ' + forecastData.current.humidity,
-                pressure : 'The pressure is : '
+                pressure : 'The pressure is : ' + forecastData.current.pressure
             });
         })
     })
