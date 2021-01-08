@@ -1,4 +1,4 @@
-console.log('CLient side Javascript');
+
 
 
 
